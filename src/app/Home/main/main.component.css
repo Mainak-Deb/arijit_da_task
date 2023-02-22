@@ -1,0 +1,9 @@
+#mainBox{
+  display: block;
+  width: 100vw;
+  height: fit-content;
+  background-color: rgb(233, 235, 238);
+  padding: 0px;
+  margin: 0px;
+
+}

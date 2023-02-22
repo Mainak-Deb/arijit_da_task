@@ -1,0 +1,16 @@
+.expandBar{
+  width: 100%;
+  cursor: pointer;
+  padding-left: 20px;
+}
+.expandbox{
+  width: 100%;
+  height: 30px;
+
+}
+#truebox{
+  width: 100%;
+}
+#truebox:hover{
+  background-color: rgb(60, 60, 60);
+}

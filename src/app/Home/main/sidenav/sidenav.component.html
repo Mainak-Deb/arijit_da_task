@@ -1,0 +1,5 @@
+<div class="sidenav">
+  <div *ngFor="let i of passData" >
+    <app-expand  [title]="i" [data]="dataset[i]" [isParentExpanded]="isExpanded" ></app-expand>
+  </div>
+</div>

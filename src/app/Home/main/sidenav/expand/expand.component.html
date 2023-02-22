@@ -1,0 +1,20 @@
+<div class="expandBar">
+  <div *ngIf="!(this.data.length != undefined)">
+    <div *ngIf="!isExpanded" (click)="expandDiv()">
+      <div class="expandbox" id="truebox" >{{ title }}▶</div>
+    </div>
+    <div *ngIf="isExpanded">
+      <div class="expandbox"  id="truebox"  (click)="expandDiv()">{{ title }}🔽</div>
+      <div *ngFor="let item of passData">
+        <app-expand
+          [title]="item"
+          [data]="data[item]"
+          [isParentExpanded]="isExpanded"
+        ></app-expand>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="this.data.length != undefined">
+    <div class="expandbox">{{ title }}</div>
+  </div>
+</div>
